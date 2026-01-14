@@ -52,9 +52,9 @@ function getPlatformConfig() {
       needsExtract: false
     },
     'win32-x64': {
-      assetPattern: `openwork-${VERSION}-win-x64.zip`,
-      extractedName: 'openwork-win',
-      binaryPath: 'openwork-win/openwork.exe',
+      assetPattern: `openwork-${VERSION}-win.zip`,
+      extractedName: 'win-unpacked',
+      binaryPath: 'win-unpacked/openwork.exe',
       needsExtract: true
     }
   }

@@ -21,8 +21,6 @@ win:
       arch: x64
     - target: zip
       arch: x64
-zip:
-  artifactName: ${name}-${version}-win-x64.${ext}
 nsis:
   artifactName: ${name}-${version}-setup.${ext}
   shortcutName: ${productName}
