@@ -89,6 +89,21 @@ function getModelInstance(modelId?: string): ChatAnthropic | ChatOpenAI | ChatGo
       model,
       openAIApiKey: apiKey
     })
+  } else if (model.startsWith('glm')) {
+    // Z.ai GLM models - use OpenAI-compatible client with custom base URL
+    const apiKey = getApiKey('zai')
+    console.log('[Runtime] Z.ai API key present:', !!apiKey)
+    if (!apiKey) {
+      throw new Error('Z.ai API key not configured')
+    }
+    return new ChatOpenAI({
+      model,
+      apiKey: apiKey,
+      configuration: {
+        baseURL: 'https://api.z.ai/api/paas/v4/',
+        apiKey: apiKey
+      }
+    })
   } else if (model.startsWith('gemini')) {
     const apiKey = getApiKey('google')
     console.log('[Runtime] Google API key present:', !!apiKey)

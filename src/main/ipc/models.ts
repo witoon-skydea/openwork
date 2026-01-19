@@ -16,7 +16,8 @@ const store = new Store({
 const PROVIDERS: Omit<Provider, 'hasApiKey'>[] = [
   { id: 'anthropic', name: 'Anthropic' },
   { id: 'openai', name: 'OpenAI' },
-  { id: 'google', name: 'Google' }
+  { id: 'google', name: 'Google' },
+  { id: 'zai', name: 'Z.ai' }
 ]
 
 // Available models configuration (updated Jan 2026)
@@ -193,6 +194,71 @@ const AVAILABLE_MODELS: ModelConfig[] = [
     provider: 'google',
     model: 'gemini-2.5-flash-lite',
     description: 'Fast, low-cost, high-performance model',
+    available: true
+  },
+  // Z.ai GLM models
+  {
+    id: 'glm-4.7',
+    name: 'GLM-4.7',
+    provider: 'zai',
+    model: 'glm-4.7',
+    description: 'Latest flagship model with excellent agentic coding capabilities',
+    available: true
+  },
+  {
+    id: 'glm-4.6v',
+    name: 'GLM-4.6V',
+    provider: 'zai',
+    model: 'glm-4.6v',
+    description: 'Multimodal model with 128K context and SOTA vision understanding',
+    available: true
+  },
+  {
+    id: 'glm-4-plus',
+    name: 'GLM-4 Plus',
+    provider: 'zai',
+    model: 'glm-4-plus',
+    description: 'Enhanced reasoning and accuracy',
+    available: true
+  },
+  {
+    id: 'glm-4-flash',
+    name: 'GLM-4 Flash',
+    provider: 'zai',
+    model: 'glm-4-flash',
+    description: 'Fast and cost-efficient model',
+    available: true
+  },
+  {
+    id: 'glm-4.5',
+    name: 'GLM-4.5',
+    provider: 'zai',
+    model: 'glm-4.5',
+    description: 'Advanced chain-of-thought reasoning',
+    available: true
+  },
+  {
+    id: 'glm-4.5-air',
+    name: 'GLM-4.5 Air',
+    provider: 'zai',
+    model: 'glm-4.5-air',
+    description: 'Lightweight version with faster inference',
+    available: true
+  },
+  {
+    id: 'glm-4-32b-0414-128k',
+    name: 'GLM-4-32B-128K',
+    provider: 'zai',
+    model: 'glm-4-32b-0414-128k',
+    description: '32B parameter model with 128K context window',
+    available: true
+  },
+  {
+    id: 'glm-4.5v',
+    name: 'GLM-4.5V',
+    provider: 'zai',
+    model: 'glm-4.5v',
+    description: 'Vision model supporting image understanding',
     available: true
   }
 ]

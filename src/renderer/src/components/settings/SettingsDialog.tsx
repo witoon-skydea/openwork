@@ -41,6 +41,12 @@ const PROVIDERS: ProviderConfig[] = [
     name: 'Google AI',
     envVar: 'GOOGLE_API_KEY',
     placeholder: 'AIza...'
+  },
+  {
+    id: 'zai',
+    name: 'Z.ai',
+    envVar: 'ZAI_API_KEY',
+    placeholder: 'Enter your Z.ai API key'
   }
 ]
 
