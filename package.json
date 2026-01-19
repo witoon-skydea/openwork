@@ -30,7 +30,12 @@
     "deepagents",
     "langchain",
     "langgraph",
-    "desktop"
+    "desktop",
+    "openai",
+    "anthropic",
+    "google",
+    "zai",
+    "glm"
   ],
   "engines": {
     "node": ">=18"
