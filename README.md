@@ -44,6 +44,7 @@ Or configure them in-app via the settings panel.
 | Anthropic | Claude Opus 4.5, Claude Sonnet 4.5, Claude Haiku 4.5, Claude Opus 4.1, Claude Sonnet 4 |
 | OpenAI    | GPT-5.2, GPT-5.1, o3, o3 Mini, o4 Mini, o1, GPT-4.1, GPT-4o       |
 | Google    | Gemini 3 Pro Preview, Gemini 2.5 Pro, Gemini 2.5 Flash, Gemini 2.5 Flash Lite |
+| Z.ai      | GLM-4.7, GLM-4.6V, GLM-4 Plus, GLM-4 Flash, GLM-4.5, GLM-4.5 Air, GLM-4-32B-128K, GLM-4.5V |
 
 ## Contributing
 
